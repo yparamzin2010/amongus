@@ -19,6 +19,9 @@ def index():
     </body>
   </html>
   """.format(color=color)
+host_name = socket.gethostname()
+ip_address = socket.gethostbyname(host_name)
+print(ip_address)
 
   # Return the HTML.
   return html
